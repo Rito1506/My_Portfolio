@@ -14,11 +14,14 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            whileHover={{ scale: 1.03, boxShadow: "0 8px 32px 0 rgba(31,38,135,0.37)" }}
+            whileHover={{
+              scale: 1.03,
+              boxShadow: "0 8px 32px 0 rgba(31,38,135,0.37)",
+            }}
             className="absolute backdrop-blur-2xl bg-white/10 border-2 border-gradient-to-br from-teal-400/40 to-purple-400/40 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col text-center w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl transition-all duration-50"
           >
             <motion.img
-              src="/profile.jpg"
+              src="/My_Portfolio/profile.jpg"
               alt="Rohit Kumar"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}

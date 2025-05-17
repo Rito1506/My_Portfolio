@@ -75,7 +75,7 @@ export default function About() {
             </div>
             {/* Profile Image */}
             <motion.img
-              src="/profile.jpg"
+              src="/My_Portfolio/profile.jpg"
               alt="Rohit"
               className="w-32 h-32 md:w-48 md:h-48 rounded-xl object-cover border-4 border-gradient-to-br from-teal-400 to-purple-400 shadow-lg hover:scale-105 transition-transform duration-200"
               initial={{ opacity: 0, scale: 0.9 }}
