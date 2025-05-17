@@ -65,7 +65,7 @@ export default function About() {
                   <FaEnvelope /> Contact Me
                 </a>
                 <a
-                  href="\public\RohitCV.pdf"
+                  href="/My_Portfolio/RohitCV.pdf"
                   download
                   className="flex items-center gap-2 bg-purple-500 hover:bg-purple-600 !text-white px-4 py-2 rounded-lg transition"
                 >

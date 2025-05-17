@@ -6,7 +6,7 @@ const timeline = [
     icon: <LuLaptop className="text-white w-6 h-6" />,
     title: "Web Developer Intern",
     org: "Prodigiwave, Noida",
-    date: "2023",
+    date: "2025 – Present",
     desc: "Built responsive UI with React & Tailwind, integrated Web3Forms, and created dynamic navigation components.",
   },
   {

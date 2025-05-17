@@ -50,7 +50,7 @@ export default function Contact() {
         </div>
 
         <a
-          href="/RohitCV.pdf" // Make sure your resume is placed in the public folder
+          href="/My_Portfolio/RohitCV.pdf" // Make sure your resume is placed in the public folder
           download
           className="inline-flex items-center px-6 py-2 bg-teal-500 !text-black font-semibold rounded-full hover:bg-teal-400 transition"
         >
