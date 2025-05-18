@@ -4,7 +4,7 @@ import { LuLaptop, LuSchool, LuGraduationCap } from "react-icons/lu";
 const timeline = [
   {
     icon: <LuLaptop className="text-white w-6 h-6" />,
-    title: "Web Developer Intern",
+    title: "Web Developer",
     org: "Prodigiwave, Noida",
     date: "2025 – Present",
     desc: "Built responsive UI with React & Tailwind, integrated Web3Forms, and created dynamic navigation components.",
@@ -19,7 +19,7 @@ const timeline = [
   {
     icon: <LuSchool className="text-white w-6 h-6" />,
     title: "BCA",
-    org: "College, Ghaziabad",
+    org: "Chaudhary Charan Singh University, Ghaziabad",
     date: "2019 – 2022",
     desc: "Completed major project: ETHLinked — a decentralized DApp using Web3.js & Bootstrap.",
   },

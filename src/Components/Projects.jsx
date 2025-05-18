@@ -3,7 +3,7 @@ import { FaGithub, FaBuilding } from "react-icons/fa";
 
 const projects = [
   {
-    title: "Internship @ Prodigiwave",
+    title: "Web Developer @ Prodigiwave",
     description:
       "Built responsive UI using React and Tailwind from Figma/Framer designs. Created animated mobile menu, floating contact form, and custom 404 page.",
     tech: ["React.js", "TailwindCSS", "Figma", "Framer"],
