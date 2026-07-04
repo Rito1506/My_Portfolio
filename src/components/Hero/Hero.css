@@ -1,0 +1,175 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: var(--nav-height);
+  overflow: hidden;
+}
+
+.hero__grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse at 50% 30%, black 10%, transparent 70%);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.hero__glow {
+  top: -10%;
+  left: 50%;
+  translate: -50% 0;
+  width: 640px;
+  height: 640px;
+  background: var(--primary);
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__window {
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  background: rgba(15, 19, 27, 0.72);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-lg);
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero__window-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border-strong);
+}
+
+.hero__dot--red {
+  background: #e0716c;
+}
+.hero__dot--yellow {
+  background: #e0c26c;
+}
+.hero__dot--green {
+  background: #6ce0a0;
+}
+
+.hero__window-title {
+  margin-left: 0.75rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2.5rem;
+  padding: clamp(1.75rem, 4vw, 3.5rem);
+}
+
+.hero__text {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero__name {
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  margin-top: 0.75rem;
+}
+
+.hero__role {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--primary);
+  color: var(--accent);
+  font-size: clamp(1rem, 2.4vw, 1.25rem);
+  margin-top: 0.6rem;
+  max-width: 30ch;
+  width: 30ch;
+  animation: typing 1.6s steps(28, end) 0.7s both,
+    blink 0.85s step-end 8 2.3s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30ch;
+  }
+}
+
+.hero__tagline {
+  margin-top: 1.25rem;
+  font-size: 1.05rem;
+  max-width: 46ch;
+  line-height: 1.7;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.hero__socials {
+  display: flex;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.hero__portrait {
+  position: relative;
+  width: clamp(150px, 30vw, 220px);
+  height: clamp(150px, 30vw, 220px);
+  margin-inline: auto;
+  flex-shrink: 0;
+}
+
+.hero__portrait-ring {
+  position: absolute;
+  inset: -10px;
+  border-radius: var(--radius-lg);
+  background: conic-gradient(from 0deg, var(--primary), var(--accent), var(--primary));
+  opacity: 0.55;
+  filter: blur(2px);
+  animation: soft-drift 8s ease-in-out infinite;
+}
+
+.hero__portrait-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  border: 4px solid var(--surface);
+}
+
+@media (min-width: 720px) {
+  .hero__content {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__role {
+    width: 30ch;
+    animation: none;
+    border-right-color: transparent;
+  }
+}

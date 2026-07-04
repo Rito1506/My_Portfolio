@@ -1,0 +1,47 @@
+:root {
+  /* Surfaces */
+  --bg: #0b0e14;
+  --surface: #0f131b;
+  --surface-alt: #131826;
+  --card: #161c28;
+  --card-hover: #1b2231;
+  --border: #232b3a;
+  --border-strong: #313c4f;
+
+  /* Text */
+  --text: #edf0f5;
+  --text-dim: #aab2c3;
+  --muted: #6d7787;
+
+  /* Brand accents */
+  --primary: #e0a458;
+  --primary-strong: #f2be7c;
+  --primary-soft: rgba(224, 164, 88, 0.14);
+  --accent: #5fb3ae;
+  --accent-soft: rgba(95, 179, 174, 0.14);
+
+  /* Feedback */
+  --success: #5fb37e;
+
+  /* Typography */
+  --font-display: "Space Grotesk", "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  --font-body: "Inter", "Segoe UI", sans-serif;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* Shadow */
+  --shadow-md: 0 12px 30px -12px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 24px 60px -20px rgba(0, 0, 0, 0.65);
+  --shadow-glow: 0 0 40px -8px var(--primary-soft);
+
+  /* Layout */
+  --container-width: 1180px;
+  --nav-height: 72px;
+  --transition-fast: 160ms ease;
+  --transition-base: 280ms cubic-bezier(0.16, 1, 0.3, 1);
+}
